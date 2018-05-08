@@ -1,0 +1,74 @@
+/*Default styles*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body, html .disable-scroll {
+  overflow: hidden !important;
+  height: 100% !important;
+  margin: 0 !important;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: normal;
+  height: 100%;
+  line-height: 1.75;
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  color: #828282;
+}
+
+body.noscroll {
+  overflow-y: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+  html {
+    font-size: 0.82rem;
+  }
+
+  body {
+    background-color: #fff;
+  }
+}
+
+.text-orange {
+  color: #F25E33;
+}
+
+.wrapper {
+  display: table;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 98;
+}
+
+.wrapper .container {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 640px) {
+  .wrapper .container {
+    width: 80%;
+  }
+}

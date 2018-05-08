@@ -1,0 +1,56 @@
+<div class="container">
+
+  <div class="inner-wrap">
+
+    <div class="triangle-isosceles" *ngIf="maxDonation > amountDonated">
+      {{ maxDonation - amountDonated | currency }} <span *ngIf="amountDonated">still</span> needed for this project
+    </div>
+
+    <div class="content">
+
+      <app-slider [amountDonated]="calculateDonationPercent(amountDonated, maxDonation)"></app-slider>
+
+      <div class="inner-content">
+
+        <p class="row">
+          <span class="text-orange">Only 3 days left </span> to fund this project.
+        </p>
+
+        <p class="row" *ngIf="donorCount">
+          Join <span>{{donorCount}}</span> other donor(s) who have already supported this project. Every dollar helps.
+        </p>
+
+        <form class="row"
+              (ngSubmit)="onSubmit()"
+              name="donationForm"
+              [formGroup]="donationForm"
+              novalidate
+        >
+
+          <div class="currencyInput">
+            <span>$</span>
+            <input class="form-control btn-left"
+                   type="tel"
+                   [formControl]="donationForm.controls.amount"
+                   name="amount"
+            />
+          </div>
+
+
+          <button type="submit"
+                  class="btn btn-submit btn-right"
+          >
+            Give Now
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+    <app-footer></app-footer>
+
+  </div>
+
+</div>

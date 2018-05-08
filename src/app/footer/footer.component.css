@@ -1,0 +1,29 @@
+.footer {
+  margin: 1.5rem auto;
+}
+
+.footer button {
+  width: 45%;
+  height: 4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #828282;
+  border: 2px solid #DCDCDC;
+  border-radius: 0.4rem;
+  background-color: #FAFAFA;
+}
+
+@media only screen and (max-width: 640px) {
+  .footer button {
+    height: 3rem;
+    font-size: 1rem;
+  }
+}
+
+.footer button.btn-left {
+  float: left;
+}
+
+.footer button.btn-right {
+  float: right;
+}

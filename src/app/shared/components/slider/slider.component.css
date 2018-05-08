@@ -1,0 +1,26 @@
+.progress {
+  position: relative;
+  height: 2rem;
+  display: block;
+  width: 100%;
+  background-color: #FAFAFA;
+  border-bottom: 2px solid #DCDCDC;
+  border-radius: 2px;
+  margin: 0;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+  .progress {
+    height: 1.5rem;
+  }
+}
+
+.progress .determinate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #F25E33;
+  transition: width .3s linear;
+}

@@ -1,0 +1,133 @@
+
+.triangle-isosceles {
+  color: #ffffff;
+  position: relative;
+  padding: 2rem;
+  margin: 1rem 0 1.5rem;
+  background: #424242;
+  font-size: 2rem;
+
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* creates triangle */
+.triangle-isosceles:after {
+  content: "";
+  display: block; /* reduce the damage in FF3.0 */
+  position: absolute;
+  bottom: -0.75rem;
+  right: 1rem;
+  width: 0;
+  border-width: 0.75rem 0.75rem 0;
+  border-style: solid;
+  border-color: #424242 transparent;
+}
+
+@media only screen and (max-width: 640px) {
+  .triangle-isosceles {
+    padding: 1rem 0.5rem;
+    font-size: 1.15rem;
+  }
+}
+
+button,
+.currencyInput {
+  width: 45%;
+  border-radius: 0.4rem;
+  font-weight: 600;
+}
+
+.row {
+  margin-bottom: 1rem;
+}
+
+.container .inner-wrap {
+  width: 50%;
+  margin: 1rem auto;
+}
+
+@media only screen and (max-width: 640px) {
+  .container .inner-wrap {
+    width: 80%;
+    margin: 1rem auto;
+  }
+}
+
+.container .content {
+  text-align: left;
+  border: 2px solid #DCDCDC;
+}
+
+.container .content .inner-content {
+  overflow: hidden;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 640px) {
+  .container .content .inner-content {
+    font-size: 1rem
+  }
+}
+
+.container .content .inner-content p span {
+  font-weight: 600;
+}
+
+.container .content .inner-content form button {
+  float: right;
+  height: 5rem;
+  background-color: #00BE1C;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 640px) {
+  .container .content .inner-content form button {
+    height: 3rem;
+    font-size: 1rem;
+  }
+}
+
+.container .content .inner-content form .currencyInput {
+  display: block;
+  padding-left: 0.5rem;
+  float: left;
+  height: 5rem;
+  border: 2px solid #DCDCDC;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 640px) {
+  .container .content .inner-content form .currencyInput {
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+.container .content .inner-content form .currencyInput span {
+  float: left;
+}
+
+.container .content .inner-content form .currencyInput input[type='tel'] {
+  border: 0;
+  height: 2.5rem;
+  width: 80%;
+  padding-left: 0.5rem;
+  color: #000000;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.container .content .inner-content form .currencyInput input[type='tel']:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 640px) {
+  .container .content .inner-content form .currencyInput input[type='tel'] {
+    font-size: 1.5rem;
+  }
+}
