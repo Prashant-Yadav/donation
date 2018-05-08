@@ -58,6 +58,8 @@ button,
 .container .content {
   text-align: left;
   border: 2px solid #DCDCDC;
+
+  box-shadow: 0 0.25rem 0.25rem #F4F4F4;
 }
 
 .container .content .inner-content {
@@ -82,6 +84,8 @@ button,
   background-color: #00BE1C;
   color: #ffffff;
   font-size: 2rem;
+  border-color: #00BE1C;
+  box-shadow: 0 0.25rem #01B21A;
 }
 
 @media only screen and (max-width: 640px) {

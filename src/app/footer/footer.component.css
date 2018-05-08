@@ -11,6 +11,12 @@
   border: 2px solid #DCDCDC;
   border-radius: 0.4rem;
   background-color: #FAFAFA;
+
+  box-shadow: 0 0.15rem #DCDCDC;
+}
+
+.footer button:hover {
+  box-shadow: 0 0.15rem 0.5rem #DCDCDC;
 }
 
 @media only screen and (max-width: 640px) {
